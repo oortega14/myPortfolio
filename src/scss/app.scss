@@ -1,34 +1,75 @@
 @use 'anidacion';
-
 //Variables
 
 $color-principal: #ccc;
 
-body {
-  background-color: $color-principal;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  
 }
 
-//mixins
+html {
+  font-size: 62.5%;
+  
+}
 
-@mixin caja_personalizada($fondo: white){
-  border: 4px solid black;
+.NavBar {
   background-color: black;
-  box-shadow: 0px 0px 2px black;
-  color: white;
-  margin: auto;
-  padding: 3px;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: flex;
+  height: 8rem;
 }
 
-.caja2 {
-  @include caja_personalizada();
+.NavBar-title {
+  width: 50%;
+  padding-left: 17rem;
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 3rem;
+  }
 }
 
-.unLorem {
-  @include caja_personalizada();
+.NavBar-links {
+  width: 50%;
+  padding-right: 17rem;
+  display: flex;
+  justify-content: center;
 }
 
-//operadores
+.NavBar-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  li {
+    display: flex;
+    align-items: center;
+    float: left;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
 
-.caja, .unLorem {
-  width: 400px + 100px;
+.letsconnect {
+  border: #D7C8B6 2px solid;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  font-weight: bold;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+  .social-networks-links {
+    justify-content: space-between;
+    border: #D7C8B6 2px solid;
+    border-radius: 100%;
+  }
 }
