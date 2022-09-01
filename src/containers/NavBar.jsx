@@ -16,17 +16,29 @@ const NavBar = () => {
             <li>Skills</li>
             <li>Projects</li>
             <li className="social-networks">
-              <div className="social-networks-links">
-                <img src={navIcon1} alt="Linkedin" />
+              <div className="social-links">
+                <a
+                  href="https://www.linkedin.com/in/oscar-ortega-guerrero-94ba76243/"
+                  target="blank"
+                >
+                  <img src={navIcon1} alt="Linkedin" />
+                </a>
               </div>
-              <div className="social-networks-links">
-                <img src={navIcon2} alt="Linkedin" />{' '}
+
+              <div className="social-links">
+                <a href="https://www.facebook.com/OsqarOrtega" target="blank">
+                  <img src={navIcon2} alt="Facebook" />{' '}
+                </a>
               </div>
-              <div className="social-networks-links">
-                <img src={navIcon3} alt="Linkedin" />{' '}
+              <div className="social-links">
+                <a href="https://www.instagram.com/osqarortega/" target="blank">
+                  <img src={navIcon3} alt="Instagram" />{' '}
+                </a>
               </div>
             </li>
-            <li className="letsconnect">Let's connect</li>
+            <div className="link-container">
+              <li className="letsconnect">Let's connect</li>
+            </div>
           </ul>
         </div>
       </section>

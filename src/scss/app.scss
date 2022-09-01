@@ -1,4 +1,7 @@
 @use 'anidacion';
+@use 'NavBar';
+@use 'Main';
+
 //Variables
 
 $color-principal: #ccc;
@@ -14,62 +17,3 @@ html {
   
 }
 
-.NavBar {
-  background-color: black;
-  color: rgb(255, 255, 255);
-  padding: 1rem;
-  display: flex;
-  height: 8rem;
-}
-
-.NavBar-title {
-  width: 50%;
-  padding-left: 17rem;
-  display: flex;
-  align-items: center;
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-.NavBar-links {
-  width: 50%;
-  padding-right: 17rem;
-  display: flex;
-  justify-content: center;
-}
-
-.NavBar-list {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  li {
-    display: flex;
-    align-items: center;
-    float: left;
-    text-align: center;
-    font-size: large;
-    cursor: pointer;
-    font-weight: 600;
-  }
-}
-
-.letsconnect {
-  border: #D7C8B6 2px solid;
-  padding-left: 2.8rem;
-  padding-right: 2.8rem;
-  font-weight: bold;
-}
-
-.social-networks {
-  display: flex;
-  justify-content: space-evenly;
-  width: 10rem;
-  .social-networks-links {
-    justify-content: space-between;
-    border: #D7C8B6 2px solid;
-    border-radius: 100%;
-  }
-}
