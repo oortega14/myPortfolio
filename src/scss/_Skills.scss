@@ -1,21 +1,71 @@
 .skill {
   background-color: #050505;
+  color: white;
 }
-// .skill-bx {
-//   background: #151515;
-//   border-radius: 64px;
-//   text-align: center;
-//   padding: 60px 50px;
-//   margin-top: -60px;
-// }
-// .skill h2 {
-// 	font-size: 45px;
-// 	font-weight: 700;
-// }
-// .skill p {
-//     color: #B8B8B8;
-//     font-size: 18px;
-//     letter-spacing: 0.8px;
-//     line-height: 1.5em;
-//     margin: 14px 0 75px 0;
-// }
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 30px 40px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+  position: relative;
+  z-index: 10;
+  color: #fafafa;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+}
+.background-image-left{
+  position: absolute;
+  height: 30rem;
+}
+
+.carousel{
+  width: 40%;
+  height: 40%;
+}
+
+.img-react {
+  position: relative;
+  z-index: 10;
+  scale: 0.4;
+}
+
+.img-ruby {
+  position: relative;
+  margin-left: 6rem;
+  bottom: 50;
+  scale: 0.65;
+  z-index: 10;
+}
+
+.img-docker {
+  position: relative;
+  z-index: 10;
+  margin-left: 3rem;
+  scale: 0.5;
+}
+
+.h3-react{
+  position: relative;
+  z-index: 10;
+  margin-bottom: 20rem;
+}
+
+.h3-ror {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 13rem;
+}
+
+.h3-docker {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 17rem;
+}
