@@ -5,7 +5,6 @@ import { Skills } from './containers/Skills'
 import Projects from './containers/Projects'
 import GetInTouch from './containers/GetInTouch'
 import Footers from './containers/Footers'
-import { Fragment } from 'react';
 
 
 function App() {

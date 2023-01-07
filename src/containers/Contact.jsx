@@ -4,7 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-const GetInTouch = () => {
+const Contact = () => {
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -94,4 +94,4 @@ const GetInTouch = () => {
   )
 }
 
-export default GetInTouch
+export { Contact };
