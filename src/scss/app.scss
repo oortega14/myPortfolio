@@ -1,0 +1,19 @@
+@use 'NavBar';
+@use 'Main';
+@use 'Skills';
+
+//Variables
+
+$color-principal: rgb(51,65,87);
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  
+}
+
+html {
+  font-size: 62.5%;
+  
+}
+

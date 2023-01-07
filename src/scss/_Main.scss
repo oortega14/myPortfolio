@@ -1,0 +1,137 @@
+.Banner-background {
+  background-image: url('../assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.Banner-section1 {
+  width: 50%;
+  height: 70rem;
+  display: flex;
+  align-items: center;
+}
+
+.Banner-section2 {
+  width: 50%;
+  height: 100%;
+  transform: scale(0.55);
+  .Astronaut-img {
+    animation-name: astronaut;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+.Container-main {
+  padding-left: 1.2rem;
+  display: inline-block;
+  height: 50%;
+}
+
+.Welcome-msg {
+  border: white 0.1rem solid;
+  font-size: 3.2rem;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  background: linear-gradient(to right, rgb(101, 6, 101), rgb(37, 4, 99));
+  opacity: 0.9;
+}
+
+.Title-banner {
+  font-size: 4rem;
+  margin-top: 2rem;
+  color: transparent;
+  position: relative;
+}
+
+.wrapper {
+  display: inline;
+  margin-top: 2rem;
+}
+
+.wrapper .static-txt {
+  margin-top: 2rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.wrapper .dynamic-txt {
+  margin-top: 1.5rem;
+  line-height: 8rem;
+  height: 9rem;
+  overflow: hidden;
+}
+
+.dynamic-txt li {
+  list-style: none;
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide 3s steps(5) infinite;
+}
+
+.dynamic-txt li span {
+  position: relative;
+}
+
+.dynamic-txt li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border-left: 0.2rem solid white;
+  animation: typing 1.5s steps(20) infinite;
+}
+
+.Paragraph-banner {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: rgb(155, 155, 155);
+}
+
+.Letsconnect-banner {
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.8rem;
+}
+
+@keyframes slide {
+  100%{
+    top: -36rem;
+  }
+}
+
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 6 -6.5rem 6 6.5rem;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+  
+}
+
+@keyframes astronaut {
+  0% {
+    transform: translateY(1rem);
+  }
+  30% {
+    transform: translateY(10rem);
+  }
+}
