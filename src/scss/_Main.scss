@@ -4,6 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  height: 80rem;
 }
 
 .Banner-section1 {
@@ -133,5 +134,11 @@
   }
   30% {
     transform: translateY(10rem);
+  }
+}
+
+@media(min-width: 300px) {
+  .Banner-section2 {
+    height: 105rem;
   }
 }

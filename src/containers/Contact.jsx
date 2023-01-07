@@ -44,8 +44,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect">
-      <Container>
+    <section className="row contact" id="connect">
+      <Container className="contact">
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>

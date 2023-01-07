@@ -69,3 +69,65 @@
   z-index: 10;
   margin-bottom: 17rem;
 }
+
+@media(min-width: 992px) {
+
+}
+
+@media(min-width: 1300px) {
+  .img-react {
+    position: relative;
+    z-index: 10;
+    scale: 0.4;
+  }
+  
+  .img-ruby {
+    position: relative;
+    margin-left: 14em;
+    bottom: 50;
+    scale: 0.65;
+    z-index: 10;
+  }
+  
+  .img-docker {
+    position: relative;
+    z-index: 10;
+    margin-left: 12rem;
+    scale: 0.5;
+  }
+  
+  .h3-react{
+    position: relative;
+    z-index: 10;
+    margin-bottom: 30rem;
+  }
+}
+
+@media(min-width: 1600px) {
+  .img-react {
+    position: relative;
+    z-index: 10;
+    scale: 0.4;
+  }
+  
+  .img-ruby {
+    position: relative;
+    margin-left: 26rem;
+    bottom: 50;
+    scale: 0.65;
+    z-index: 10;
+  }
+  
+  .img-docker {
+    position: relative;
+    z-index: 10;
+    margin-left: 23rem;
+    scale: 0.5;
+  }
+  
+  .h3-react{
+    position: relative;
+    z-index: 10;
+    margin-bottom: 46rem;
+  }
+}

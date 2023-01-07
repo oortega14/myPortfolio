@@ -3,8 +3,7 @@ import NavBar from './containers/NavBar'
 import Main from './containers/Main'
 import { Skills } from './containers/Skills'
 import Projects from './containers/Projects'
-import GetInTouch from './containers/GetInTouch'
-import Footers from './containers/Footers'
+import { Contact } from './containers/Contact'
 
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
       <Main/>
       <Skills/>
       <Projects/>
-      <GetInTouch/>
-      <Footers/>
+      <Contact/>
     </div>
   );
 }
