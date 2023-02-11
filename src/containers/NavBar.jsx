@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { AiOutlineHome } from 'react-icons/ai';
 
-const NavBar = () => {
+const NavBar = ({
+  homeRef,
+  skillsRef,
+  projectsRef,
+  contactUsRef
+}) => {
+
+  const handleClick1 = () => {
+    homeRef.current.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  }
+
+  const handleClick2 = () => {
+    skillsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  }
+
+  const handleClick3 = () => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  }
+
+  const handleClick4 = () => {
+    contactUsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  }
+
   return (
     <div className='row'>
       <section className="NavBar">
@@ -13,9 +35,9 @@ const NavBar = () => {
         </div>
         <div className="col-3 d-flex NavBar-links">
           <ul className="NavBar-list">
-            <li><AiOutlineHome className='NavBar-home-icon'/></li>
-            <li className='NavBar-home-icon'>Skills</li>
-            <li className='NavBar-home-icon'>Projects</li>
+            <li onClick={handleClick1}><AiOutlineHome className='NavBar-home-icon'/></li>
+            <li onClick={handleClick2} className='NavBar-home-icon'>Skills</li>
+            <li onClick={handleClick3} className='NavBar-home-icon'>Projects</li>
           </ul>
         </div>
         <div className="col-3 d-flex align-items-center justify-content-start" >
@@ -45,7 +67,7 @@ const NavBar = () => {
         </div>
         <div className="col-3 d-flex ">
           <ul className="link-container">
-              <li className="letsconnect">Let's connect</li>
+              <li onClick={handleClick4} className="letsconnect">Let's connect</li>
           </ul>
         </div>
       </section>

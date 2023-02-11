@@ -2,9 +2,9 @@ import React from 'react'
 import { ControlledCarousel } from '../components/ControlledCarousel';
 import colorSharp from "../assets/img/color-sharp.png"
 
-const Skills = () => {
+const Skills = ({ skillsRef }) => {
   return (
-    <div className='row skill'>
+    <div className='row skill'ref={skillsRef}>
       <div className="col-12">
       <div className="skill-bx">
           <h2>Skills</h2>

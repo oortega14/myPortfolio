@@ -7,7 +7,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   const projects = [
     {
       title: "Business Startup",
@@ -47,7 +47,7 @@ const Projects = () => {
 
 
   return (
-    <section className="row project" id="project">
+    <section className="row project" id="project" ref={projectsRef}>
       <Container>
         <Row>
           <Col size={12}>

@@ -1,10 +1,9 @@
 import React from 'react';
 import headerImg from '../assets/img/header-img.svg';
-import header from '../assets/img/logo.png';
 
-const Main = () => {
+const Main = ({homeRef}) => {
   return (
-    <div className='row'>
+    <div className='row' ref={homeRef}>
       <section className="Banner-background">
         <div className="Banner-section1">
           <div className="Container-main">

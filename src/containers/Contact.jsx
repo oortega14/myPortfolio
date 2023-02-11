@@ -4,7 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-const Contact = () => {
+const Contact = ({contactUsRef}) => {
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="row contact" id="connect">
+    <section className="row contact" id="connect" ref={contactUsRef}>
       <Container className="contact">
         <Row className="align-items-center">
           <Col size={12} md={6}>
